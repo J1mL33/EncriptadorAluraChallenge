@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecnriptador de texto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+    
+</head>
+<body>
+    <main>
+        <div class="contenido">
+            <div class="izquierda">
+                <div class="encabezado">
+                    <div class="logo">
+                        <img src="img/alura-logo.avif" alt="Logo de Alura">
+                    </div>
+                </div>
+                <div class="ingreso">
+                    <textarea name="ingreso-texto" id="ingreso-texto" cols="90" rows="40" placeholder="Ingrese el texto aquí"></textarea>
+                    <div class="botones-primarios">
+                        <p class="recomendacion">⚠ Solo letras minúsculas y sin acentos</p>
+                        <input id="encriptar" type="button" value="Encriptar">
+                        <input id="desencriptar" type="button" value="Desencriptar">
+                    </div>
+                </div>
+            </div>
+            
+        <div class="derecha">
+            <div class="resultado">
+                <div class="no-texto" id="sin-resultado">
+                    <img src="img/search.png" alt="No hay texto">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+                <div class="si-texto" id="con-resultado">
+                    <div class="titulo-resultado">
+                        <h2>Texto procesado:</h2>
+                    </div>
+                    <div class="respuesta">
+                        <textarea name="resultado" id="resultado" cols="50" rows="40" readonly></textarea>
+                    </div>
+                    <div class="boton-copiar">
+                        <input id="copiarTexto" type="button" value="Copiar">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        </div>
+    </main>       
+</body>
+</html>
